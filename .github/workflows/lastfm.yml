@@ -1,0 +1,29 @@
+name: 🎵 Update Last.fm
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-lastfm:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update Last.fm
+        uses: dxnter/last-fm-readme@v1.7.0
+        with:
+          api_key: ${{ secrets.LASTFM_API_KEY }}
+          username: Allison399
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "🎵 Update currently listening"
+          file_pattern: README.md
