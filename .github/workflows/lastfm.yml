@@ -10,20 +10,13 @@ permissions:
 
 jobs:
   update-lastfm:
+    name: 🎵 Update Music Stats
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Update Last.fm
-        uses: dxnter/last-fm-readme@v1.7.0
+      - name: 🎵 Update Last.fm README
+        uses: dxnter/lastfm-readme@v1
         with:
-          api_key: ${{ secrets.LASTFM_API_KEY }}
-          username: Allison399
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "🎵 Update currently listening"
-          file_pattern: README.md
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_USER: Allison399
+          COMMIT_MESSAGE: "🎵 Update Last.fm"
