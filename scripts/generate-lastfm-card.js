@@ -4,11 +4,11 @@ const username = "Allison399";
 const apiKey = process.env.LASTFM_API_KEY;
 
 const COLORS = {
-  background: "#f9f5f1",
+  background: "#4c4c34",
   text: "#413933",
   muted: "#756F6C",
-  surface: "#fdfbf9",
-  border: "#dcc9b0",
+  surface: "#f6f3f1",
+  border: "#b5b18f",
   highlight: "#743014",
   hover: "#b5b18f",
   dark: "#442d1c",
@@ -419,26 +419,15 @@ function createSvg(track, artworkDataUri, recentTracks) {
   <!-- Decorative Elements -->
   <!-- ========================================= -->
 
-  <text
-    x="830"
-    y="72"
-    text-anchor="middle"
-    font-size="25"
-    fill="${COLORS.accent}"
-    opacity="0.55"
-  >
-    ✦
-  </text>
-
 
   <!-- AG watermark -->
 
   <text
-    x="830"
-    y="275"
-    text-anchor="middle"
+    x="850"
+    y="585"
+    text-anchor="end"
     font-family="Georgia, serif"
-    font-size="26"
+    font-size="24"
     font-style="italic"
     font-weight="700"
     fill="${COLORS.hover}"
@@ -483,22 +472,6 @@ function createSvg(track, artworkDataUri, recentTracks) {
 
   ${recentRows}
 
-
-  <!-- ========================================= -->
-  <!-- Bottom Decorative Accent -->
-  <!-- ========================================= -->
-
-  <text
-    x="830"
-    y="575"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="18"
-    fill="${COLORS.hover}"
-    opacity="0.55"
-  >
-    ✦
-  </text>
 
 </svg>
 `;
