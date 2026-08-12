@@ -2,7 +2,8 @@ name: 🎵 Update Currently Listening
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "0,30 6-22 * * *"
+      timezone: "America/Chicago"
 
   workflow_dispatch:
 
@@ -46,3 +47,7 @@ jobs:
           commit_message: "🎵 Update currently listening"
 
           file_pattern: assets/currently-listening.svg
+
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
