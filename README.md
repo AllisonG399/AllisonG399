@@ -58,3 +58,11 @@ and continuous learning.
       />
   </a>
 </div>
+
+<!-- Currently listening -->
+## 🪴 Currently Listening
+[![Last.fm Grid](https://vercel.app)](https://last.fm/user/Allison399)
+
+<!--START_LASTFM_RECENT-->
+<!--END_LASTFM_RECENT-->
+
