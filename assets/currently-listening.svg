@@ -1,0 +1,153 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="900"
+  height="330"
+  viewBox="0 0 900 330"
+>
+  <defs>
+    <clipPath id="albumClip">
+      <rect
+        x="50"
+        y="50"
+        width="220"
+        height="220"
+        rx="18"
+      />
+    </clipPath>
+  </defs>
+
+  <!-- Card -->
+  <rect
+    x="4"
+    y="4"
+    width="892"
+    height="322"
+    rx="28"
+    fill="#f9f5f1"
+    stroke="#dcc9b0"
+    stroke-width="3"
+  />
+
+  <!-- Subtle inner surface -->
+  <rect
+    x="24"
+    y="24"
+    width="852"
+    height="282"
+    rx="20"
+    fill="#fdfbf9"
+  />
+
+  <!-- Album artwork -->
+  
+      <image
+        href="https://lastfm-img.freetls.fastly.net/i/u/300x300/0a509bfe2e5444659c4c8ec4fcf0b171.png"
+        x="50"
+        y="50"
+        width="220"
+        height="220"
+        preserveAspectRatio="xMidYMid slice"
+        clip-path="url(#albumClip)"
+      />
+    
+
+  <!-- Divider -->
+  <line
+    x1="305"
+    y1="55"
+    x2="305"
+    y2="275"
+    stroke="#dcc9b0"
+    stroke-width="2"
+  />
+
+  <!-- Heading -->
+  <text
+    x="345"
+    y="82"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    font-weight="700"
+    letter-spacing="2"
+    fill="#4c4c34"
+  >
+    ♫ CURRENTLY LISTENING
+  </text>
+
+  <!-- Song -->
+  <text
+    x="345"
+    y="145"
+    font-family="Georgia, serif"
+    font-size="31"
+    font-weight="700"
+    fill="#413933"
+  >
+    I&apos;ll Follow You
+  </text>
+
+  <!-- Artist -->
+  <text
+    x="345"
+    y="180"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="20"
+    fill="#743014"
+  >
+    Shinedown
+  </text>
+
+  <!-- Album -->
+  
+  <text
+    x="345"
+    y="210"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    fill="#756F6C"
+  >
+    Amaryllis
+  </text>
+  
+
+  <!-- Status -->
+  <text
+    x="345"
+    y="252"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="14"
+    font-weight="600"
+    fill="#4c4c34"
+  >
+    ● Listening now
+  </text>
+
+  <!-- AG watermark -->
+  <text
+    x="830"
+    y="285"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="26"
+    font-style="italic"
+    font-weight="700"
+    fill="#b5b18f"
+    opacity="0.65"
+  >
+    AG
+  </text>
+
+  <!-- Decorative botanical element -->
+  <text
+    x="830"
+    y="70"
+    text-anchor="middle"
+    font-size="25"
+    fill="#4c4c34"
+    opacity="0.55"
+  >
+    ✦
+  </text>
+
+</svg>
