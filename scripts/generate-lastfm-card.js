@@ -45,6 +45,38 @@ async function getRecentTrack() {
   return track;
 }
 
+async function getArtworkDataUri(track) {
+  const images = track.image || [];
+
+  const artwork =
+    images.find((image) => image.size === "extralarge")?.["#text"] ||
+    images.find((image) => image.size === "large")?.["#text"] ||
+    images.find((image) => image.size === "medium")?.["#text"];
+
+  if (!artwork) {
+    console.log("No album artwork found.");
+    return null;
+  }
+
+  console.log(`Downloading artwork: ${artwork}`);
+
+  const response = await fetch(artwork);
+
+  if (!response.ok) {
+    console.log(`Artwork request failed: ${response.status}`);
+    return null;
+  }
+
+  const contentType =
+    response.headers.get("content-type") || "image/jpeg";
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+
+  const base64 = buffer.toString("base64");
+
+  return `data:${contentType};base64,${base64}`;
+}
+
 function escapeXml(value = "") {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -62,7 +94,7 @@ function truncate(text, maxLength) {
   return text.slice(0, maxLength - 3) + "...";
 }
 
-function createSvg(track) {
+function createSvg(track, artworkDataUri) {
   const artist =
     typeof track.artist === "string"
       ? track.artist
@@ -70,11 +102,6 @@ function createSvg(track) {
 
   const title = track.name || "Unknown Track";
   const album = track.album?.["#text"] || "";
-
-  const artwork =
-    track.image?.find((image) => image.size === "extralarge")?.["#text"] ||
-    track.image?.find((image) => image.size === "large")?.["#text"] ||
-    "";
 
   const isPlaying = track["@attr"]?.nowplaying === "true";
 
@@ -87,10 +114,10 @@ function createSvg(track) {
   const safeAlbum = escapeXml(truncate(album, 32));
   const safeStatus = escapeXml(status);
 
-  const artworkElement = artwork
+  const artworkElement = artworkDataUri
     ? `
       <image
-        href="${escapeXml(artwork)}"
+        href="${artworkDataUri}"
         x="50"
         y="50"
         width="220"
@@ -124,7 +151,6 @@ function createSvg(track) {
   return `
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
   width="900"
   height="330"
   viewBox="0 0 900 330"
@@ -141,7 +167,7 @@ function createSvg(track) {
     </clipPath>
   </defs>
 
-  <!-- Card -->
+  <!-- Card background -->
   <rect
     x="4"
     y="4"
@@ -153,7 +179,7 @@ function createSvg(track) {
     stroke-width="3"
   />
 
-  <!-- Subtle inner surface -->
+  <!-- Inner surface -->
   <rect
     x="24"
     y="24"
@@ -241,6 +267,18 @@ function createSvg(track) {
     ${safeStatus}
   </text>
 
+  <!-- Decorative botanical accent -->
+  <text
+    x="830"
+    y="70"
+    text-anchor="middle"
+    font-size="25"
+    fill="${COLORS.accent}"
+    opacity="0.55"
+  >
+    ✦
+  </text>
+
   <!-- AG watermark -->
   <text
     x="830"
@@ -256,18 +294,6 @@ function createSvg(track) {
     AG
   </text>
 
-  <!-- Decorative botanical element -->
-  <text
-    x="830"
-    y="70"
-    text-anchor="middle"
-    font-size="25"
-    fill="${COLORS.accent}"
-    opacity="0.55"
-  >
-    ✦
-  </text>
-
 </svg>
 `;
 }
@@ -281,22 +307,29 @@ async function main() {
 
   const track = await getRecentTrack();
 
-  console.log(
-    `Found: ${track.name} — ${
-      typeof track.artist === "string"
-        ? track.artist
-        : track.artist?.["#text"]
-    }`
-  );
+  const artist =
+    typeof track.artist === "string"
+      ? track.artist
+      : track.artist?.["#text"];
 
-  const svg = createSvg(track);
+  console.log(`Found: ${track.name} — ${artist}`);
+
+  const artworkDataUri = await getArtworkDataUri(track);
+
+  if (artworkDataUri) {
+    console.log("✓ Album artwork embedded.");
+  } else {
+    console.log("⚠ No album artwork available.");
+  }
+
+  const svg = createSvg(track, artworkDataUri);
 
   fs.writeFileSync(
     "assets/currently-listening.svg",
     svg.trim()
   );
 
-  console.log("Updated assets/currently-listening.svg");
+  console.log("✓ Updated assets/currently-listening.svg");
 }
 
 main().catch((error) => {
