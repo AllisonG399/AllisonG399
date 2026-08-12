@@ -1,0 +1,29 @@
+name: 🎵 Update Currently Listening
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-card:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Generate Last.fm card
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        run: |
+          node scripts/generate-lastfm-card.js
+
+      - name: Commit updated card
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "🎵 Update currently listening"
+          file_pattern: assets/currently-listening.svg
