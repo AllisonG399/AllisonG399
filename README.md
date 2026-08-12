@@ -61,16 +61,18 @@ and continuous learning.
 
 <!-- Currently listening -->
 ## 🪴 Currently Listening
-[![Last.fm Grid](https://vercel.app)](https://last.fm/user/Allison399)
 
-<!--START_LASTFM_RECENT-->
-<a href="https://last.fm" target="_blank"><img src="https://user-images.githubusercontent.com/17434202/215290617-e793598d-d7c9-428f-9975-156db1ba89cc.svg" alt="Last.fm Logo" width="18" height="13"/></a> **Recent Tracks**
+<p align="center">
+  <i>A little music while I build ✦</i>
+</p>
 
-> ∙ **[Sound of Madness](https://www.last.fm/music/Shinedown/_/Sound+of+Madness)** - Shinedown<br/>
-> ∙ **[Forever](https://www.last.fm/music/Papa+Roach/_/Forever)** - Papa Roach<br/>
-> ∙ **[Steel Still Rusts](https://www.last.fm/music/Nickelback/_/Steel+Still+Rusts)** - Nickelback<br/>
-> ∙ **[Wasteland](https://www.last.fm/music/Seether/_/Wasteland)** - Seether<br/>
-> ∙ **[Imposter](https://www.last.fm/music/Shinedown/_/Imposter)** - Shinedown<br/>
-> ∙ **[Valentine's Day](https://www.last.fm/music/Linkin+Park/_/Valentine%27s+Day)** - Linkin Park<br/>
-<!--END_LASTFM_RECENT-->
+<p align="center">
+  <a href="https://www.last.fm/user/Allison399" target="_blank" rel="noopener noreferrer">
+    <img
+      src="./assets/currently-listening.svg"
+      alt="Currently listening on Last.fm"
+      width="550"
+    />
+  </a>
+</p>
 
