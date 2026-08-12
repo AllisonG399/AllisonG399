@@ -107,7 +107,7 @@
     font-weight="700"
     fill="#413933"
   >
-    3AM
+    Perfect
   </text>
 
 
@@ -120,7 +120,7 @@
     font-size="20"
     fill="#743014"
   >
-    Matchbox Twenty
+    Hedley
   </text>
 
 
@@ -134,7 +134,7 @@
           font-size="15"
           fill="#756F6C"
         >
-          Tailgate Anthems [Explicit]
+          NOW!16
         </text>
       
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Matchbox+Twenty/_/3AM"
+          href="https://www.last.fm/music/Theory+of+a+Deadman/_/Hurricane"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            3AM
+            Hurricane
           </text>
 
           <text
@@ -245,7 +245,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Matchbox Twenty
+            Theory of a Deadman
           </text>
 
         </a>
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/Wyatt+Flores/_/Not+Good+Enough"
+          href="https://www.last.fm/music/Rascal+Flatts/_/What+Hurts+the+Most"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Not Good Enough
+            What Hurts the Most
           </text>
 
           <text
@@ -296,7 +296,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Wyatt Flores
+            Rascal Flatts
           </text>
 
         </a>
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/L3TD%C3%98WN/_/Drunk+Enough"
+          href="https://www.last.fm/music/Jeremy+Camp/_/Let+It+Fade"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Drunk Enough
+            Let It Fade
           </text>
 
           <text
@@ -347,7 +347,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            L3TDØWN
+            Jeremy Camp
           </text>
 
         </a>
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/KG+And+The+Bad+Habits/_/TWSSTM"
+          href="https://www.last.fm/music/Machine+Six/_/Holding+You"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            TWSSTM
+            Holding You
           </text>
 
           <text
@@ -398,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            KG And The Bad Habits
+            Machine Six
           </text>
 
         </a>
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/HARDY/_/Country+In+Me"
+          href="https://www.last.fm/music/Creed/_/My+Sacrifice"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Country In Me
+            My Sacrifice
           </text>
 
           <text
@@ -449,7 +449,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            HARDY
+            Creed
           </text>
 
         </a>
