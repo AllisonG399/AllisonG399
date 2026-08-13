@@ -1,0 +1,13 @@
+<svg xmlns="http://w3.org" viewBox="0 0 100 120" width="100%" height="100%">
+  <!-- Top Cylinder Layer -->
+  <path d="M10,25 C10,13.95 27.91,5 50,5 C72.09,5 90,13.95 90,25 L90,45 C90,56.05 72.09,65 50,65 C27.91,65 10,56.05 10,45 Z" fill="#3DDC84" />
+  <ellipse cx="50" cy="25" rx="40" ry="20" fill="#60E49B" />
+
+  <!-- Middle Cylinder Layer -->
+  <path d="M10,45 C10,56.05 27.91,65 50,65 C72.09,65 90,56.05 90,45 L90,75 C90,86.05 72.09,95 50,95 C27.91,95 10,86.05 10,75 Z" fill="#29C66F" />
+  <ellipse cx="50" cy="45" rx="40" ry="20" fill="#3DDC84" opacity="0.8" />
+
+  <!-- Bottom Cylinder Layer -->
+  <path d="M10,75 C10,86.05 27.91,95 50,95 C72.09,95 90,86.05 90,75 L90,95 C90,106.05 72.09,115 50,115 C27.91,115 10,106.05 10,95 Z" fill="#17B05B" />
+  <ellipse cx="50" cy="75" rx="40" ry="20" fill="#29C66F" opacity="0.8" />
+</svg>
