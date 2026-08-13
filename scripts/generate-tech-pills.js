@@ -2,16 +2,32 @@ const fs = require("fs");
 const path = require("path");
 const techStack = require("./tech-stack");
 
-const ICON_DIR = path.join(__dirname, "..", "assets", "icons");
-const OUTPUT_DIR = path.join(__dirname, "..", "assets", "tech");
+const ICON_DIR = path.join(
+  __dirname,
+  "..",
+  "assets",
+  "icons"
+);
+
+const OUTPUT_DIR = path.join(
+  __dirname,
+  "..",
+  "assets",
+  "tech"
+);
 
 const COLORS = {
-  background: "#D8C7AD",
-  text: "#4C4C34",
+  background: "#FDFBF9",
+  text: "#743014",
 };
 
-const PILL_HEIGHT = 38;
-const ICON_SIZE = 20;
+const PILL_HEIGHT = 32;
+const ICON_SIZE = 18;
+const FONT_SIZE = 12;
+
+const HORIZONTAL_PADDING = 14;
+const ICON_GAP = 7;
+const TEXT_BUFFER = 4;
 
 function escapeXml(value) {
   return value
@@ -22,16 +38,66 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
+/*
+ * SVG text does not have an easy way to calculate its
+ * rendered width in Node without a browser/canvas.
+ *
+ * This provides a conservative estimate so text has
+ * enough room inside the pill.
+ */
 function estimateTextWidth(text) {
-  return text.length * 7.2;
+  return text.length * 6.8;
+}
+
+/*
+ * Extract the original viewBox from the technology icon.
+ *
+ * Different SVG icons use different coordinate systems,
+ * so we should NOT force every icon into 0 0 24 24.
+ */
+function extractViewBox(svg) {
+  const match = svg.match(
+    /viewBox=["']([^"']+)["']/i
+  );
+
+  if (!match) {
+    return "0 0 24 24";
+  }
+
+  return match[1];
+}
+
+/*
+ * Remove the outer <svg> wrapper so the icon can be
+ * placed inside our own SVG container.
+ */
+function extractSvgContent(svg) {
+  return svg
+    .replace(/<svg[^>]*>/i, "")
+    .replace(/<\/svg>\s*$/i, "")
+    .trim();
 }
 
 function createPill(technology) {
-  const name = escapeXml(technology.name);
+  const name = escapeXml(
+    technology.name
+  );
 
-  const hasIcon = technology.icon && technology.icon.trim() !== "";
+  /*
+   * Technologies with icon: ""
+   * intentionally become text-only pills.
+   */
+  const hasIcon =
+    technology.icon &&
+    technology.icon.trim() !== "";
 
-  let icon = "";
+  let iconMarkup = "";
+
+  /*
+   * ----------------------------------------
+   * ICON
+   * ----------------------------------------
+   */
 
   if (hasIcon) {
     const iconPath = path.join(
@@ -39,6 +105,10 @@ function createPill(technology) {
       `${technology.icon}.svg`
     );
 
+    /*
+     * If an icon is specified but the file
+     * doesn't exist, warn and skip it.
+     */
     if (!fs.existsSync(iconPath)) {
       console.warn(
         `⚠ Missing icon: ${technology.icon}.svg`
@@ -47,52 +117,99 @@ function createPill(technology) {
       return;
     }
 
-    icon = fs.readFileSync(iconPath, "utf8");
+    const iconSvg = fs.readFileSync(
+      iconPath,
+      "utf8"
+    );
+
+    /*
+     * Preserve the icon's original coordinate
+     * system so artwork doesn't become clipped.
+     */
+    const viewBox =
+      extractViewBox(iconSvg);
+
+    const content =
+      extractSvgContent(iconSvg);
+
+    iconMarkup = `
+      <svg
+        x="${HORIZONTAL_PADDING}"
+        y="${(PILL_HEIGHT - ICON_SIZE) / 2}"
+        width="${ICON_SIZE}"
+        height="${ICON_SIZE}"
+        viewBox="${viewBox}"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        ${content}
+      </svg>
+    `;
   }
 
-  const textWidth = estimateTextWidth(technology.name);
+  /*
+   * ----------------------------------------
+   * TEXT / WIDTH
+   * ----------------------------------------
+   */
 
-  const horizontalPadding = 14;
-  const iconGap = hasIcon ? 8 : 0;
+  const textWidth =
+    estimateTextWidth(
+      technology.name
+    );
 
+  /*
+   * Icon contributes its width plus the
+   * spacing between the icon and text.
+   *
+   * Text-only pills receive none of this.
+   */
+  const iconWidth = hasIcon
+    ? ICON_SIZE + ICON_GAP
+    : 0;
+
+  /*
+   * Calculate the pill width based on:
+   *
+   * left padding
+   * + icon
+   * + icon/text gap
+   * + text
+   * + safety buffer
+   * + right padding
+   */
   const width =
-    horizontalPadding * 2 +
-    (hasIcon ? ICON_SIZE : 0) +
-    iconGap +
-    textWidth;
+    HORIZONTAL_PADDING * 2 +
+    iconWidth +
+    textWidth +
+    TEXT_BUFFER;
 
+  const roundedWidth =
+    Math.ceil(width);
+
+  /*
+   * Text begins after the icon when one exists.
+   */
   const textX =
-    horizontalPadding +
-    (hasIcon ? ICON_SIZE + iconGap : 0);
+    HORIZONTAL_PADDING +
+    iconWidth;
 
-  const iconMarkup = hasIcon
-    ? `
-      <g transform="translate(${horizontalPadding}, 9)">
-        ${icon
-          .replace(
-            /<svg[^>]*>/,
-            `<svg
-              width="${ICON_SIZE}"
-              height="${ICON_SIZE}"
-              viewBox="0 0 24 24"
-            >`
-          )
-          .replace(/<\/svg>\s*$/, "</svg>")}
-      </g>
-    `
-    : "";
+  /*
+   * ----------------------------------------
+   * SVG
+   * ----------------------------------------
+   */
 
   const svg = `
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="${Math.ceil(width)}"
+  width="${roundedWidth}"
   height="${PILL_HEIGHT}"
-  viewBox="0 0 ${Math.ceil(width)} ${PILL_HEIGHT}"
+  viewBox="0 0 ${roundedWidth} ${PILL_HEIGHT}"
 >
   <rect
     x="0"
     y="0"
-    width="${Math.ceil(width)}"
+    width="${roundedWidth}"
     height="${PILL_HEIGHT}"
     rx="${PILL_HEIGHT / 2}"
     fill="${COLORS.background}"
@@ -102,10 +219,10 @@ function createPill(technology) {
 
   <text
     x="${textX}"
-    y="24"
+    y="${PILL_HEIGHT / 2 + FONT_SIZE * 0.35}"
     fill="${COLORS.text}"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="14"
+    font-size="${FONT_SIZE}"
     font-weight="600"
   >
     ${name}
@@ -113,11 +230,23 @@ function createPill(technology) {
 </svg>
 `.trim();
 
+  /*
+   * ----------------------------------------
+   * OUTPUT FILE
+   * ----------------------------------------
+   */
+
+  const filename = (
+    technology.icon ||
+    technology.name
+  )
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/\./g, "");
+
   const outputPath = path.join(
     OUTPUT_DIR,
-    `${technology.icon || technology.name
-      .toLowerCase()
-      .replace(/\s+/g, "-")}-pill.svg`
+    `${filename}-pill.svg`
   );
 
   fs.writeFileSync(
@@ -126,10 +255,21 @@ function createPill(technology) {
     "utf8"
   );
 
-  console.log(`✓ Generated ${technology.name}`);
+  console.log(
+    `✓ Generated ${technology.name}`
+  );
 }
 
-function generateCategory(category, technologies) {
+/*
+ * ----------------------------------------
+ * CATEGORY GENERATION
+ * ----------------------------------------
+ */
+
+function generateCategory(
+  category,
+  technologies
+) {
   console.log(`\n${category}`);
 
   for (const technology of technologies) {
@@ -137,14 +277,32 @@ function generateCategory(category, technologies) {
   }
 }
 
-fs.mkdirSync(OUTPUT_DIR, {
-  recursive: true,
-});
+/*
+ * Make sure the output directory exists.
+ */
+fs.mkdirSync(
+  OUTPUT_DIR,
+  {
+    recursive: true,
+  }
+);
 
-for (const [category, technologies] of Object.entries(
+/*
+ * Generate pills for every category
+ * in tech-stack.js.
+ */
+for (const [
+  category,
+  technologies,
+] of Object.entries(
   techStack
 )) {
-  generateCategory(category, technologies);
+  generateCategory(
+    category,
+    technologies
+  );
 }
 
-console.log("\n✓ Tech pills generated.");
+console.log(
+  "\n✓ Tech pills generated."
+);
