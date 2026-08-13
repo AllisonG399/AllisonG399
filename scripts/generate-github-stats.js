@@ -228,7 +228,8 @@ async function getRepositories() {
         GITHUB_USER.toLowerCase() &&
       !repo.fork &&
       !repo.archived &&
-      !repo.disabled
+      !repo.disabled &&
+      repo.size > 0
   );
 }
 
