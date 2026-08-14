@@ -149,7 +149,7 @@
     font-weight="600"
     fill="#4c4c34"
   >
-    ● Listening now
+    ✦ Recently played
   </text>
 
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Eminem/_/Love+the+Way+You+Lie"
+          href="https://www.last.fm/music/Forrest+Rose/_/It+Was+Always+You"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Love the Way You Lie
+            It Was Always You
           </text>
 
           <text
@@ -245,7 +245,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Eminem
+            Forrest Rose
           </text>
 
         </a>
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/John+Michael+Howell/_/10,000+Foes"
+          href="https://www.last.fm/music/Eminem/_/Love+the+Way+You+Lie"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            10,000 Foes
+            Love the Way You Lie
           </text>
 
           <text
@@ -296,7 +296,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            John Michael Howell
+            Eminem
           </text>
 
         </a>
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/Woodkid/_/Run+Boy+Run"
+          href="https://www.last.fm/music/John+Michael+Howell/_/10,000+Foes"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Run Boy Run
+            10,000 Foes
           </text>
 
           <text
@@ -347,7 +347,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Woodkid
+            John Michael Howell
           </text>
 
         </a>
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/Capital+Cities/_/Safe+and+Sound"
+          href="https://www.last.fm/music/Woodkid/_/Run+Boy+Run"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Safe and Sound
+            Run Boy Run
           </text>
 
           <text
@@ -398,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Capital Cities
+            Woodkid
           </text>
 
         </a>
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Myles+Smith/_/Stargazing"
+          href="https://www.last.fm/music/Capital+Cities/_/Safe+and+Sound"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Stargazing
+            Safe and Sound
           </text>
 
           <text
@@ -449,7 +449,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Myles Smith
+            Capital Cities
           </text>
 
         </a>
