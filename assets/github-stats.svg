@@ -1,0 +1,91 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="520"
+  height="120"
+  viewBox="0 0 520 120"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">
+    GitHub coding statistics
+  </title>
+
+  <desc id="desc">
+    357 commits and
+    65,331 lines of code
+  </desc>
+
+  <!-- Commit Card -->
+  <rect
+    x="0"
+    y="0"
+    width="250"
+    height="120"
+    rx="16"
+    fill="#FDFBF9"
+    stroke="#E8DCD5"
+    stroke-width="1"
+  />
+
+  <text
+    x="125"
+    y="51"
+    text-anchor="middle"
+    fill="#743014"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="30"
+    font-weight="700"
+  >
+    357
+  </text>
+
+  <text
+    x="125"
+    y="80"
+    text-anchor="middle"
+    fill="#9A6A55"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="12"
+    font-weight="600"
+    letter-spacing="1.5"
+  >
+    COMMITS
+  </text>
+
+  <!-- Lines Card -->
+  <rect
+    x="270"
+    y="0"
+    width="250"
+    height="120"
+    rx="16"
+    fill="#FDFBF9"
+    stroke="#E8DCD5"
+    stroke-width="1"
+  />
+
+  <text
+    x="395"
+    y="51"
+    text-anchor="middle"
+    fill="#743014"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="30"
+    font-weight="700"
+  >
+    65,331
+  </text>
+
+  <text
+    x="395"
+    y="80"
+    text-anchor="middle"
+    fill="#9A6A55"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="12"
+    font-weight="600"
+    letter-spacing="1.5"
+  >
+    LINES OF CODE
+  </text>
+</svg>
