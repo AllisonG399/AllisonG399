@@ -130,3 +130,22 @@ and continuous learning.
   <img src="./assets/tech/vercel-pill.svg" alt="Vercel">
   <img src="./assets/tech/npm-pill.svg" alt="NPM">
 </p>
+
+<!-- GitHub Activity Stats -->
+## 🌳 GitHub Activity
+
+***Across active repositories I own - forks and archived repositories excluded:***
+<p align="center">
+  <img
+    src="./assets/github-stats.svg"
+    alt="GitHub statistics showing total commits and current lines of code"
+  />
+</p>
+
+
+<p align="center">
+  <img
+    src="./github-metrics.svg"
+    alt="GitHub Activity Metrics"
+  />
+</p>
