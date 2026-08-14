@@ -134,7 +134,7 @@ and continuous learning.
 <!-- GitHub Activity Stats -->
 ## 🌳 GitHub Activity
 
-***Across active repositories I own - forks and archived repositories excluded:***
+***Across active repositories I own — current source code; forks, archived repositories, and package files excluded.***
 <p align="center">
   <img
     src="./assets/github-stats.svg"
