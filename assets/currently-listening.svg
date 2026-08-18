@@ -107,7 +107,7 @@
     font-weight="700"
     fill="#413933"
   >
-    Goodbye (RM3)
+    Busy Loving You
   </text>
 
 
@@ -120,7 +120,7 @@
     font-size="20"
     fill="#743014"
   >
-    Panner Band
+    Good Fortune
   </text>
 
 
@@ -134,7 +134,7 @@
           font-size="15"
           fill="#756F6C"
         >
-          Goodbye (RM3)
+          Busy Loving You
         </text>
       
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Panner+Band/_/Goodbye+(RM3)"
+          href="https://www.last.fm/music/Good+Fortune/_/Busy+Loving+You"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Goodbye (RM3)
+            Busy Loving You
           </text>
 
           <text
@@ -245,7 +245,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Panner Band
+            Good Fortune
           </text>
 
         </a>
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/I%27d+Come+for+You"
+          href="https://www.last.fm/music/Emphatic/_/Don%27t+Forget+About+Me"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            I&apos;d Come for You
+            Don&apos;t Forget About Me
           </text>
 
           <text
@@ -296,7 +296,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Nickelback
+            Emphatic
           </text>
 
         </a>
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/Daughtry/_/Feels+Like+Tonight"
+          href="https://www.last.fm/music/Daughtry/_/Break+the+Spell"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Feels Like Tonight
+            Break the Spell
           </text>
 
           <text
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/Weeping+Grease/_/Good+Times"
+          href="https://www.last.fm/music/Shadow+Beloved/_/Burn+Me+Beautiful"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Good Times
+            Burn Me Beautiful
           </text>
 
           <text
@@ -398,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Weeping Grease
+            Shadow Beloved
           </text>
 
         </a>
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Kings+of+Leon/_/Use+Somebody"
+          href="https://www.last.fm/music/Adelitas+Way/_/Last+Stand"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Use Somebody
+            Last Stand
           </text>
 
           <text
@@ -449,7 +449,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Kings of Leon
+            Adelitas Way
           </text>
 
         </a>
