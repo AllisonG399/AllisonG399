@@ -107,7 +107,7 @@
     font-weight="700"
     fill="#413933"
   >
-    Heartache Medication
+    Glitter
   </text>
 
 
@@ -120,7 +120,7 @@
     font-size="20"
     fill="#743014"
   >
-    Jon Pardi
+    BENEE
   </text>
 
 
@@ -134,7 +134,7 @@
           font-size="15"
           fill="#756F6C"
         >
-          NOW That&apos;s What I Call Music ...
+          Melted
         </text>
       
 
@@ -149,7 +149,7 @@
     font-weight="600"
     fill="#4c4c34"
   >
-    ✦ Recently played
+    ● Listening now
   </text>
 
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Jon+Pardi/_/Heartache+Medication"
+          href="https://www.last.fm/music/Jungle/_/Carry+On"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Heartache Medication
+            Carry On
           </text>
 
           <text
@@ -245,7 +245,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Jon Pardi
+            Jungle
           </text>
 
         </a>
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/Toby+Keith/_/Who%27s+That+Man"
+          href="https://www.last.fm/music/Muse/_/Starlight"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Who&apos;s That Man
+            Starlight
           </text>
 
           <text
@@ -296,7 +296,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Toby Keith
+            Muse
           </text>
 
         </a>
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/Big+&amp;+Rich/_/Holy+Water"
+          href="https://www.last.fm/music/Bastille/_/Pompeii"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Holy Water
+            Pompeii
           </text>
 
           <text
@@ -347,7 +347,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Big &amp; Rich
+            Bastille
           </text>
 
         </a>
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/Sawyer+Brown/_/The+Race+Is+On"
+          href="https://www.last.fm/music/Weezer/_/Island+in+the+Sun"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            The Race Is On
+            Island in the Sun
           </text>
 
           <text
@@ -398,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sawyer Brown
+            Weezer
           </text>
 
         </a>
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Montgomery+Gentry/_/What+Do+Ya+Think+About+That"
+          href="https://www.last.fm/music/sombr/_/undressed"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            What Do Ya Think About That
+            undressed
           </text>
 
           <text
@@ -449,7 +449,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Montgomery Gentry
+            sombr
           </text>
 
         </a>
