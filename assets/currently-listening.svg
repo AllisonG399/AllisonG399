@@ -107,7 +107,7 @@
     font-weight="700"
     fill="#413933"
   >
-    Lullaby
+    Midnight Queen
   </text>
 
 
@@ -149,7 +149,7 @@
     font-weight="600"
     fill="#4c4c34"
   >
-    ● Listening now
+    ✦ Recently played
   </text>
 
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/Lullaby"
+          href="https://www.last.fm/music/Nickelback/_/Midnight+Queen"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Lullaby
+            Midnight Queen
           </text>
 
           <text
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/Home"
+          href="https://www.last.fm/music/Nickelback/_/Another+Hole+In+The+Head"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Home
+            Another Hole In The Head
           </text>
 
           <text
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/Side+Of+A+Bullet"
+          href="https://www.last.fm/music/Nickelback/_/Gotta+Get+Me+Some"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Side Of A Bullet
+            Gotta Get Me Some
           </text>
 
           <text
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/Where+Do+I+Hide"
+          href="https://www.last.fm/music/Nickelback/_/Those+Days+(Acoustic)"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Where Do I Hide
+            Those Days (Acoustic)
           </text>
 
           <text
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Nickelback/_/Rattle+The+Cage"
+          href="https://www.last.fm/music/Nickelback/_/Everything+I+Wanna+Do"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Rattle The Cage
+            Everything I Wanna Do
           </text>
 
           <text
