@@ -111,9 +111,14 @@ and continuous learning.
 
 **Backend & Data**
 <p>
+  <img src="./assets/tech/springboot-pill.svg" alt="Spring Boot">
+  <img src="./assets/tech/springsecurity-pill.svg" alt="Spring Security">
   <img src="./assets/tech/nodejs-pill.svg" alt="Node">
   <img src="./assets/tech/nextjs-pill.svg" alt="Next.js">
   <img src="./assets/tech/restful-apis-pill.svg" alt="RESTful API">
+  <img src="./assets/tech/jpa-pill.svg" alt="JPA">
+  <img src="./assets/tech/hibernate-pill.svg" alt="Hibernate">
+  <img src="./assets/tech/flyway-pill.svg" alt="Flyway">
   <img src="./assets/tech/json-pill.svg" alt="JSON">
   <img src="./assets/tech/mysql-pill.svg" alt="MySQL">
   <img src="./assets/tech/mongodb-pill.svg" alt="MongoDB">
@@ -129,6 +134,14 @@ and continuous learning.
   <img src="./assets/tech/intellij-idea-pill.svg" alt="IntelliJ IDEA">
   <img src="./assets/tech/vercel-pill.svg" alt="Vercel">
   <img src="./assets/tech/npm-pill.svg" alt="NPM">
+  <img src="./assets/tech/maven-pill.svg" alt="Maven">
+</p>
+
+**Testing**
+<p>
+  <img src="./assets/tech/junit-pill.svg" alt="JUnit">
+  <img src="./assets/tech/unit-testing-pill.svg" alt="Unit Testing">
+  <img src="./assets/tech/integration-testing-pill.svg" alt="Integration Testing">
 </p>
 
 <!-- GitHub Activity Stats -->
