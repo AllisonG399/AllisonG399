@@ -86,12 +86,32 @@ const techStack = {
 
   backend: [
     {
+      name: "Spring Boot",
+      icon: "SpringBoot",
+    },
+    {
+      name: "Spring Security",
+      icon: "SpringSecurity",
+    },
+    {
       name: "Node.js",
       icon: "Node.js",
     },
     {
       name: "RESTful APIs",
       icon: "",
+    },
+    {
+      name: "JPA",
+      icon: "",
+    },
+    {
+      name: "Hibernate",
+      icon: "Hibernate",
+    },
+    {
+      name: "Flyway",
+      icon: "Flyway",
     },
     {
       name: "JSON",
@@ -142,6 +162,25 @@ const techStack = {
     {
       name: "npm",
       icon: "NPM",
+    },
+    {
+      name: "Maven",
+      icon: "Maven",
+    },
+  ],
+
+  testing: [
+    {
+      name: "JUnit",
+      icon: "",
+    },
+    {
+      name: "Unit Testing",
+      icon: "",
+    },
+    {
+      name: "Integration Testing",
+      icon: "",
     },
   ],
 };
