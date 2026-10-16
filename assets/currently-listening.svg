@@ -107,7 +107,7 @@
     font-weight="700"
     fill="#413933"
   >
-    Rain
+    DYWTYLM
   </text>
 
 
@@ -149,7 +149,7 @@
     font-weight="600"
     fill="#4c4c34"
   >
-    ● Listening now
+    ✦ Recently played
   </text>
 
 
@@ -212,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/Sugar"
+          href="https://www.last.fm/music/Sleep+Token/_/DYWTYLM"
           target="_blank"
         >
 
@@ -235,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Sugar
+            DYWTYLM
           </text>
 
           <text
@@ -263,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/David+Kushner/_/Sweet+Oblivion"
+          href="https://www.last.fm/music/David+Kushner/_/Hero+(Instrumental)"
           target="_blank"
         >
 
@@ -286,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Sweet Oblivion
+            Hero (Instrumental)
           </text>
 
           <text
@@ -314,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/David+Kushner/_/Love+Is+Going+To+Kill+Us"
+          href="https://www.last.fm/music/David+Kushner/_/Heaven+Sees"
           target="_blank"
         >
 
@@ -337,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Love Is Going To Kill Us
+            Heaven Sees
           </text>
 
           <text
@@ -365,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/Calcutta"
+          href="https://www.last.fm/music/David+Kushner/_/Electrified"
           target="_blank"
         >
 
@@ -388,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Calcutta
+            Electrified
           </text>
 
           <text
@@ -398,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sleep Token
+            David Kushner
           </text>
 
         </a>
@@ -416,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/Granite"
+          href="https://www.last.fm/music/Sleep+Token/_/Mine"
           target="_blank"
         >
 
@@ -439,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Granite
+            Mine
           </text>
 
           <text
