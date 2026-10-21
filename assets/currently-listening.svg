@@ -117,7 +117,7 @@
     font-weight="700"
     fill="#413933"
   >
-    Levitate
+    dangerously anxious
   </text>
 
 
@@ -130,23 +130,13 @@
     font-size="20"
     fill="#743014"
   >
-    Sleep Token
+    Zach Munn
   </text>
 
 
   <!-- Album -->
 
   
-        <text
-          x="350"
-          y="210"
-          font-family="Arial, Helvetica, sans-serif"
-          font-size="15"
-          fill="#756F6C"
-        >
-          Sundowning
-        </text>
-      
 
 
   <!-- Status -->
@@ -222,7 +212,7 @@
         <!-- Recent track 1 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/Levitate"
+          href="https://www.last.fm/music/Zach+Munn/_/dangerously+anxious"
           target="_blank"
         >
 
@@ -245,7 +235,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Levitate
+            dangerously anxious
           </text>
 
           <text
@@ -255,7 +245,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sleep Token
+            Zach Munn
           </text>
 
         </a>
@@ -273,7 +263,7 @@
         <!-- Recent track 2 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/The+Summoning"
+          href="https://www.last.fm/music/Kaibrienne/_/teach+you+how+to+love+me"
           target="_blank"
         >
 
@@ -296,7 +286,7 @@
             font-weight="600"
             fill="#413933"
           >
-            The Summoning
+            teach you how to love me
           </text>
 
           <text
@@ -306,7 +296,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sleep Token
+            Kaibrienne
           </text>
 
         </a>
@@ -324,7 +314,7 @@
         <!-- Recent track 3 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/DYWTYLM"
+          href="https://www.last.fm/music/Orvak/_/Only+You"
           target="_blank"
         >
 
@@ -347,7 +337,7 @@
             font-weight="600"
             fill="#413933"
           >
-            DYWTYLM
+            Only You
           </text>
 
           <text
@@ -357,7 +347,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sleep Token
+            Orvak
           </text>
 
         </a>
@@ -375,7 +365,7 @@
         <!-- Recent track 4 -->
 
         <a
-          href="https://www.last.fm/music/David+Kushner/_/Humankind+(Slowed+%252B+Reverb)"
+          href="https://www.last.fm/music/Pedro+Santos/_/I+Don%27t+Know+Me"
           target="_blank"
         >
 
@@ -398,7 +388,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Humankind (Slowed + Reverb)
+            I Don&apos;t Know Me
           </text>
 
           <text
@@ -408,7 +398,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            David Kushner
+            Pedro Santos
           </text>
 
         </a>
@@ -426,7 +416,7 @@
         <!-- Recent track 5 -->
 
         <a
-          href="https://www.last.fm/music/Sleep+Token/_/Emergence"
+          href="https://www.last.fm/music/Mandrazo+&amp;+Despaux/_/Way+Down+We+Go"
           target="_blank"
         >
 
@@ -449,7 +439,7 @@
             font-weight="600"
             fill="#413933"
           >
-            Emergence
+            Way Down We Go
           </text>
 
           <text
@@ -459,7 +449,7 @@
             font-size="14"
             fill="#756F6C"
           >
-            Sleep Token
+            Mandrazo &amp; Despaux
           </text>
 
         </a>
